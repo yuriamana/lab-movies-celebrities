@@ -1,0 +1,13 @@
+<h2>Edit a movie</h2>
+<form method="post" action="/celebrities/edit/{{movie._id}}/" class="form">
+
+    <label for="name" class="label">Title</label>
+    <input class="input" type="text" id="name" name="title" value="{{movie.name}}">
+    
+    <label for="name">Genre</label>
+    <input type="text" name="genre" value="{{movie.occupation}}">
+
+    <label for="name">Cast</label>
+    <input type="text" name="cast" value="{{movie.cast}}">
+    <button>edit</button>
+</form>

@@ -1,0 +1,15 @@
+<h2>All celebrities</h2>
+<ul>
+  {{#each celebrities}}
+    <li>
+      <span>Name: {{name}} </span><br />
+      <span>Occupation: {{occupation}} </span><br />
+      <span>Catch Phrase: {{catchPhrase}} </span><br />
+      <a href="/celebrities/edit/{{_id}}/">edit</a>
+      <form action="/celebrities/delete/{{_id}}/" method="post">
+        <button>Delete</button>
+      </form>
+    </li>
+  {{/each}}
+
+</ul>
